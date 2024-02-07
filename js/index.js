@@ -56,10 +56,14 @@ function dynamicContent() {
 function verifiedInput(encrypt) {
     const regex = /[A-ZÁÉÍÓÚáéíóú123456789ñÑ!@#$%^&*()\-=+_{}\[\]|;:'",.<>\/?\\]/;
 
-    if (!regex.test(encrypt) && !(encrypt == '')) {
-        return true;
+    if (!regex.test(encrypt)) {
+        if (!(encrypt == '')) 
+            return true;
+        alert('No se encontro el mensaje');    
+        return false
+        
     } else {
-        alert('No cumple las condiciones');
+        alert('El mensaje por encriptar debe estar en minúsculas, sin acento y/o caracteres especiales');
         return false;
     }
 }
