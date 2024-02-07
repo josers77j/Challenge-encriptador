@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Challenge encriptador</title>
+</head>
+<body>
+  <div class="container">    
+    <div class="mainContent">
+      <div class="mainMedia">
+        <img class="mainLogo" src="img/aluraLogo.png" alt="">
+      </div>
+      <div class="mainTitle">
+        <textarea name="text" id="text" cols="50" rows="15" placeholder="Ingrese el texto aquí"></textarea>
+      </div>
+      <div class="mainFunction">
+        <p class="mainText">
+          <i class="fa-regular fa-circle-question"></i>
+          Solo letras minúsculas, sin acentos ni caracteres especiales.
+        </p>  
+        <button class="encryptButton" id="encrypt"><i class="fa-solid fa-lock"></i> Encriptar</button>
+        <button class="desencryptButton" id="decrypt"><i class="fa-solid fa-lock-open"></i> Desencriptar</button>
+      </div>
+    </div>
+    <div class="secondaryContent">
+      <div class="mediaContent" id="showContent">
+        <img src="img/notFind.png" alt="">
+        <div class="secondaryTitle">Ningún mensaje fue encontrado</div>
+        <div class="secondaryP">Ingresa el texto que desees encriptar o desencriptar</div>
+      </div>
+      <div class="mediaContent2" id="showContent2" style="display: none;">
+        <p id="encryptText">Aquí estará la cadena encriptada</p>
+        <button class="clipBoard" id="clipboard"><i class="fa-solid fa-copy"></i> Copiar Texto</button>
+      </div>
+    </div>  
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

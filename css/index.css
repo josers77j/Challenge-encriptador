@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121a22;
+  color: #f3f5fc;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: #1f2c38;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: auto;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+}
+
+.mainLogo {
+  width: 70px;
+}
+
+.mainContent {
+  margin: 10px;
+  position: relative;
+}
+
+.mainMedia {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.mainTitle {
+  width: 70%;
+  margin: auto;
+  padding: 39px;
+}
+
+.mainFunction {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-left: 100px;
+  z-index: 1;
+}
+
+.mainText {
+  margin: auto 20px;
+}
+
+button {
+  height: 40px;
+  margin: 10px 10px;
+  font-size: 20px;
+  border-radius: 17px;
+}
+
+.encryptButton,
+.desencryptButton,
+.clipBoard {
+  width: 30%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.encryptButton {
+  color: #f3f5fc;
+  background: #0a3871;
+  border: none;
+}
+
+.encryptButton:hover {
+  background-color: #2a4365;
+}
+
+.desencryptButton {
+  color: #0a3871;
+  background: #f3f5fc;
+  border: none;
+}
+
+.desencryptButton:hover {
+  color: #f3f5fc;
+  background-color: #2a4365;
+}
+
+.clipBoard {
+  width: 100%;
+  color: #0a3871;
+  background: #f3f5fc;
+  border: none;
+  margin: 0;
+  z-index: 1;
+}
+
+.clipBoard:hover {
+  background: #2a4365;
+  color: #f3f5fc;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  resize: none;
+  border-radius: 10px;
+  color: #f3f5fc;
+  padding: 15px;
+}
+
+.secondaryContent {
+  margin: 10px;
+  border-radius: 20px;
+  background: #45515c;
+  box-shadow: 5px 5px 10px 2px #121a22;
+}
+
+.mediaContent {
+  width: 80%;
+  margin: 100px auto;
+  height: 600px;
+}
+
+.mediaContent2 {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 800px;
+}
+
+.mediaContent2 p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Ajusta el espacio inferior */
+}
+
+.secondaryTitle {
+  font-weight: bold;
+  font-size: 26px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.secondaryP {
+  text-align: center;
+}
+
+/* Consulta de medios para dispositivos más pequeños (tablets) */
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 100%;
+  }
+
+  .mainMedia {
+    padding: 0 10px;
+  }
+
+
+  .mainFunction {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .mainText {
+    margin: auto 10px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .mainTitle {
+    width: 100%;
+    padding: 20px;
+  }
+  .encryptButton,
+  .desencryptButton,
+  .clipBoard {
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  textarea {
+    font-size: 20px;
+  }
+
+  .secondaryTitle {
+    font-size: 20px;
+  }
+
+  .mediaContent {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+
+/* Consulta de medios para dispositivos más pequeños (móviles) */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 100%;
+  }
+
+  .mainMedia {
+    padding: 0 10px;
+  }
+
+  .mainFunction {
+    position: relative;
+    margin-left: 0;
+  }
+
+  .mainText {
+    margin: auto 10px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .mainTitle {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .encryptButton,
+.desencryptButton,
+.clipBoard {
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+  textarea {
+    font-size: 20px;
+  }
+
+  .secondaryTitle {
+    font-size: 20px;
+  }
+
+  .mediaContent {
+    margin: 20px auto;
+  }
+}
