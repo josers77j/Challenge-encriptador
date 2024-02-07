@@ -54,7 +54,7 @@ function dynamicContent() {
 }
 
 function verifiedInput(encrypt) {
-    const regex = /[A-ZÁÉÍÓÚáéíóú123456789ñÑ!@#$%^&*()\-=+_{}\[\]|;:'",.<>\/?\\]/;
+    const regex = /[A-ZÁÉÍÓÚáéíóúÑ!@#$%^&*()\-=+_{}\[\]|;:'",.<>\/?\\]/;
 
     if (!regex.test(encrypt)) {
         if (!(encrypt == '')) 
